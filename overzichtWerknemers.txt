@@ -1,0 +1,12 @@
+Voornaam      ,           Achternaam       ,        Kamer          ,Toestel        
+================================================================================
+karel         ,          appellen          ,       12               ,       600                      
+peter         ,           pan              ,        144             ,         166                      
+hans          ,           doorestein       ,        195             ,         180                      
+Joop          ,           Braakhekke       ,        1               ,         1                        
+Andre         ,           Rieu             ,        1               ,         1                        
+piet          ,           Picasso          ,        200             ,         193                      
+Vincent       ,          Biertje           ,       2                ,        2                        
+Joop          ,           Ratinger         ,        1               ,         9                        
+KU            ,           NOORD-Noord      ,        00.10 � 00.16   ,         20275                    
+KU            ,           NOORD-Zuid       ,        01.01 � 01.11   ,          20272                   

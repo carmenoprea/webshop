@@ -1,0 +1,14 @@
+*   {
+    background-color: antiquewhite;
+    font-family: sans-serif;
+    font-size: 14px;
+
+}
+
+input {
+
+    display: block;
+    background-color: whitesmoke;
+    border-style: solid;
+    border-radius: 2px;
+}
