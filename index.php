@@ -1,10 +1,10 @@
 <?php
 session_start();
-include('./smarty/libs/Smarty.class.php');
-include('./includes/functions.php');
+include 'vendor/autoload.php';
+include './includes/functions.php';
 
 // create object
-$smarty = new Smarty;
+$smarty = new Smarty();
 
 // dynamische deel van de webpagina
 
@@ -12,9 +12,5 @@ $smarty = new Smarty;
 $products = getProducts();
 $smarty->assign("products", $products);
 
-
 // Laat de webshop zien
 $smarty->display('/templates/main.tpl');
-  
-
-?>
