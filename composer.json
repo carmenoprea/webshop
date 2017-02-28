@@ -1,0 +1,12 @@
+{
+    "name": "carmen/webshop",
+    "require": {
+        "smarty/smarty": "^3.1"
+    },
+    "authors": [
+        {
+            "name": "Madalina Carmen Oprea",
+            "email": "carmen.oprea@hotmail.com"
+        }
+    ]
+}
