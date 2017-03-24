@@ -4,11 +4,11 @@
 
 <body id="main_body" >
 	
-	<img id="top" src="images/top.png" alt="">
+	<img id="top" src="/images/top.png" alt="">
 	<div id="form_container">
 	
 		<h1><a>Webshop 2016</a></h1>
-		<form id="form_1120242" class="appnitro"  method="post" action="./includes/bestelform.php">
+		<form id="form_1120242" class="appnitro"  method="post" action="../includes/bestelform.php">
 			<div class="form_description">
                             <h2>Bestelformulier</h2>
                             <p>Geef uw adresgegevens op voor afhandeling</p>

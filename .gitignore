@@ -1,6 +1,1 @@
 .idea
-cache/*
-includes/templates_c/*
-templates_c/*
-/vendor/
-composer.lock

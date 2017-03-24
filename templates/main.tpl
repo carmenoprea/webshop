@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-{include file="../templates/header.tpl" title="Webshop"  username='bezoeker'} 
+{include file="../templates/header.tpl" title="Webshop"  username='bezoeker'}
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 
-Bakker 2016
+
 
 -->
 
-
+<html>
 <body id="Webshop" data-spy="scroll" data-target=".navbar" data-offset="60">
   
     

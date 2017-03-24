@@ -10,7 +10,7 @@
       <div class="panel panel-default text-center">
         <div class="panel-heading">
         
-        <form method="post" action="login.php">
+        <form method="post" action="index.php?action=login">
             <fieldset class="panel-heading">
             <input type="text" name="username" required="yes" placeholder="username">
             <input type="password" name="password" required="yes" placeholder="wachtwoord">

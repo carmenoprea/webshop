@@ -6,9 +6,9 @@
     
 <!-- {include file="../templates/header.tpl" title="Info"} -->
 
-<pre>
+
 <main>
-    <section classs="personalinfo">
+    <section class="personalinfo">
         
      
     </section>
@@ -21,7 +21,7 @@
     </section>
     </main>
     
-</main>
+
 
 
 {include file="../templates/footer.tpl"}

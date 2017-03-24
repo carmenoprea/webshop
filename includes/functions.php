@@ -5,6 +5,23 @@
  * Date: 8-11-2015
  * Time: 21:06
  */
+function Dispatch() {
+
+    global $smarty;
+
+    // Dispatch();
+    if ( $_SESSION['toegang'] == true) {
+        $smarty->assign("showLogin", false);
+    }else{
+        $smarty->assign("showLogin", true);
+    }
+
+    if ( ($_GET['action'] == 'login') && ($_SESSION['toegang'] == false )) {
+        $_SESSION['toegang'] = login();
+    }
+
+
+}
 
 
 function login()
@@ -17,7 +34,7 @@ function login()
      * Date: 8-11-2015
      * Time: 20:14
      */
-    include('./includes/dbConnect.php');
+    include('dbConnect.php');
 
     // vars
     // deze zijn leeg
@@ -36,7 +53,7 @@ function login()
     try {
 
         $queryResult = $dbh->prepare($query);
-        $queryResult->execute();
+        $queryResult-> execute();
 
         if ($row = $queryResult->fetch()) {
             $toegang = true;
@@ -93,8 +110,6 @@ function overzichtBestellingen()
     $query = "SELECT * FROM $table;";
     return db_query($query);
 }
-
-
 
 
 function db_query($sqlQuery)
