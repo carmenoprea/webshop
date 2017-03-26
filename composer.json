@@ -2,7 +2,8 @@
     "name": "carmen/webshop",
     "require": {
         "smarty/smarty": "^3.1",
-        "setasign/fpdf": "^1.8.1"
+        "setasign/fpdf": "^1.8.1",
+        "silex/silex": "~2.0"
     },
     "authors": [
         {
