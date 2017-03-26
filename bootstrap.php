@@ -2,6 +2,8 @@
 $app = new Silex\Application();
 
 // Application Configuration
+$app['debug'] = true;
+
 // Smarty configuration
 $app['smarty.cacheDir']    = APP_DIR . '/smarty/cache/';
 $app['smarty.configDir']   = APP_DIR . '/smarty/config/';
@@ -26,6 +28,7 @@ $app['smarty'] = function () use ($app)
     return $smarty;
 };
 
+// add Doctrine Database Abstraction Layer
 $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
     'db.options' => array(
         'host'     => $app['config.db.host'],
@@ -34,3 +37,6 @@ $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
         'password' => $app['config.db.password'],
     ),
 ));
+
+// add Session support
+$app->register(new Silex\Provider\SessionServiceProvider());
