@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{include file="../templates/header.tpl" title="Webshop"  username='bezoeker'}
+{include file="header.tpl" title="Webshop"  username='bezoeker'}
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -14,22 +14,22 @@ and open the template in the editor.
   
     
 <!-- Banner -->
-{include file="/templates/banner.tpl"}
+{include file="banner.tpl"}
 
 <!-- Producten -->
-{include file="/templates/products.tpl"} 
+{include file="products.tpl"} 
 <!-- About sectie -->
-{include file="/templates/about.tpl"}
+{include file="about.tpl"}
 <!-- Services -->
-{include file="/templates/services.tpl"}
+{include file="services.tpl"}
 <!-- Prijzen of tarieven -->
-{include file="/templates/prijzen.tpl"}
+{include file="prijzen.tpl"}
 <!-- contact -->
-{include file="/templates/contact.tpl"}
+{include file="contact.tpl"}
 <!-- navigatie menu-balk -->
-{include file="/templates/navigator_top.tpl"}
+{include file="navigator_top.tpl"}
 <!-- footer -->
-{include file="/templates/footer.tpl"}
+{include file="footer.tpl"}
     
 </body>
 
