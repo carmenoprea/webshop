@@ -3,11 +3,15 @@ define('APP_DIR', __DIR__);
 require_once __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ . '/bootstrap.php';
 
+use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\Validator\ConstraintViolation;
+use Symfony\Component\Validator\ConstraintViolationList;
+
 /**
  * @var Silex\Application $app defined in bootstrap.php
  */
 
-$app['smarty']->assign('showLogin', true);
+$app['smarty']->assign('showLogin', !$app['session']->get('isLoggedIn'));
 
 $app->get('/', function () use ($app)
 {
@@ -15,6 +19,59 @@ $app->get('/', function () use ($app)
 
     $app['smarty']->assign('products', $products);
     return $app['smarty']->fetch('main.tpl');
+});
+
+$app->post('/login', function () use ($app)
+{
+    if (!isset($_POST['remember']))
+        $_POST['remember'] = 0;
+
+    $validator = new Assert\Collection([
+        'username' => [new Assert\Required(), new Assert\Length(['max' => 45, 'min' => 1])],
+        'password' => new Assert\Required(),
+        'remember' => new Assert\NotBlank(),
+        'submit'   => new Assert\NotBlank(),
+    ]);
+
+    $errors = $app['validator']->validate($_POST, $validator);
+
+    if (count($errors) == 0)
+    {
+        $password = $app['db']->executeQuery('SELECT password FROM users WHERE email=?', [0 => $_POST['username']])->fetchColumn();
+
+        if ($password)
+        {
+            if (password_verify($_POST['password'], $password))
+            {
+                $app['session']->set('isLoggedIn', true);
+                return $app->redirect('/');
+            }
+            else
+                $errors = ['password' => 'Wrong password.'];
+        }
+        else
+            $errors = ['username' => 'User does not exist.'];
+    }
+
+    if ($errors instanceof ConstraintViolationList)
+    {
+        $tmp = [];
+        foreach ($errors as $error)
+        {
+            $tmp[str_replace(['[', ']'], '', $error->getPropertyPath())] = $error->getMessage();
+        }
+
+        $errors = $tmp;
+    }
+
+    $app['smarty']->assign('errors', $errors);
+    return $app['smarty']->fetch('login.tpl');
+});
+
+$app->get('/logout', function () use ($app)
+{
+    $app['session']->remove('isLoggedIn');
+    return $app->redirect('/');
 });
 
 $app->get('/employees', function () use ($app)

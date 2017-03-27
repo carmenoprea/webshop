@@ -40,3 +40,9 @@ $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
 
 // add Session support
 $app->register(new Silex\Provider\SessionServiceProvider());
+
+// add Validation
+$app->register(new Silex\Provider\ValidatorServiceProvider());
+
+// add CSRF support
+$app->register(new \Silex\Provider\CsrfServiceProvider());
