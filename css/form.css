@@ -1,0 +1,36 @@
+*   {
+    background-color: antiquewhite;
+    font-family: sans-serif;
+    font-size: 14px;
+
+}
+
+header {
+    font-size: 10px;
+
+}
+
+fieldset {
+    display: block;
+    border-radius: 10px;
+    margin: 5px;
+
+ }
+
+fieldset p {
+
+    
+}
+
+input {
+    display: block;
+    background-color: whitesmoke;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+footer {
+    display: block;
+    position: relative;
+}

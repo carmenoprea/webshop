@@ -99,7 +99,6 @@ function getProducts()
 
 function overzichtWerknemers()
 {
-    $table = 'werknemers';
     $query = "SELECT * FROM $table;";
     return db_query($query);
 }

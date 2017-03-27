@@ -1,5 +1,5 @@
 Voornaam                 Achternaam               Kamer          Toestel        
-================================================================================
+==================================================================================
 2                        karel                    appellen                 12                       
 5                        peter                    pan                      144                      
 6                        hans                     doorestein               195                      
@@ -8,5 +8,5 @@ Voornaam                 Achternaam               Kamer          Toestel
 29                       piet                     Picasso                  200                      
 30                       Vincent                  Biertje                  2                        
 31                       Joop                     Ratinger                 1                        
-32                       KU                       NOORD-Noord              00.10 – 00.16            
-33                       KU                       NOORD-Zuid               01.01 – 01.11            
+32                       KU                       NOORD-Noord              00.10 ï¿½ 00.16            
+33                       KU                       NOORD-Zuid               01.01 ï¿½ 01.11            

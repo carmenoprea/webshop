@@ -1,0 +1,13 @@
+*   {
+    background-color: beige;
+    font-family: sans-serif;
+    font-size: 18px;
+    clear: both;
+    }
+
+
+form    {
+    border-radius: 5px;
+    font-size: 20px;
+    display: block;
+}
