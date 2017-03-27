@@ -15,9 +15,12 @@
                 <li><a href="#services">SERVICES</a></li>
                 <li><a href="#prijzen">PRIJZEN</a></li>
                 <li><a href="/orders">BESTELLINGEN</a></li>
-                <li><a href="/employees">LIJST WERKNEMERS</a></li>
                 <li><a href="#PRODUCTS">PRODUCTS</a></li>
                 <li><a href="#contact">CONTACT</a></li>
+                {if $isLoggedIn}
+                    <li><a href="/employees">LIJST WERKNEMERS</a></li>
+                    <li><a href="/logout">LOGOUT</a></li>
+                {/if}
             </ul>
         </div>
     </div>

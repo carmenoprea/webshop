@@ -6,7 +6,7 @@
     <button type="button" class="btn btn-danger">Subscribe</button>
   </form>
 
-  {if $showLogin}
+  {if !$isLoggedIn}
       {include file ="login.tpl"}
   {/if}
 

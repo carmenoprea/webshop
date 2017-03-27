@@ -11,7 +11,7 @@ use Symfony\Component\Validator\ConstraintViolationList;
  * @var Silex\Application $app defined in bootstrap.php
  */
 
-$app['smarty']->assign('showLogin', !$app['session']->get('isLoggedIn'));
+$app['smarty']->assign('isLoggedIn', $app['session']->get('isLoggedIn'));
 
 $app->get('/', function () use ($app)
 {
