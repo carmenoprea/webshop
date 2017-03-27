@@ -2,7 +2,7 @@
 <head>
 <title>Webshop login </title>
 
-{include file="../templates/header.tpl" title="werknemers"  username='gast'}
+{include file="header.tpl" title="werknemers"  username='gast'}
 </head>
     <body>
   <div class="row">
@@ -26,5 +26,5 @@
 
  
     </body>
-    {include file="../templates/footer.tpl"}
+    {include file="footer.tpl"}
 </html>

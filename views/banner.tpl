@@ -7,7 +7,7 @@
   </form>
 
   {if $showLogin}
-      {include file ="/templates/login.tpl"}
+      {include file ="login.tpl"}
   {/if}
 
 </div>

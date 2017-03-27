@@ -1,4 +1,4 @@
-{include file="../templates/header.tpl" title="Webform order plaatsen"  username='klant'} 
+{include file="header.tpl" title="Webform order plaatsen"  username='klant'}
 <html>    
 <title>Bestelingen Webshop 2016</title>
 

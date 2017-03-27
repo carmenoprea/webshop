@@ -7,7 +7,7 @@ require_once __DIR__ . '/bootstrap.php';
  * @var Silex\Application $app defined in bootstrap.php
  */
 
-$app['smarty']->assign('showLogin', false);
+$app['smarty']->assign('showLogin', true);
 
 $app->get('/', function () use ($app)
 {

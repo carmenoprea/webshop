@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-{include file="../templates/header.tpl" title="Webshop"  username='web'}
+{include file="header.tpl" title="Webshop"  username='web'}
 {include 'functions.php'}
-{include file="../templates/header.tpl" title="Webform order plaatsen"  username='klant'}
+{include file="header.tpl" title="Webform order plaatsen"  username='klant'}
 
 
 <!--
@@ -52,5 +52,5 @@ Bakker 2016
 </section>
 
 </body>
-{include file="../templates/footer.tpl"}
+{include file="footer.tpl"}
 </html>

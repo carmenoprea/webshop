@@ -4,7 +4,7 @@
 </head>
 <body>
     
-<!-- {include file="../templates/header.tpl" title="Info"} -->
+<!-- {include file="header.tpl" title="Info"} -->
 
 
 <main>
@@ -24,7 +24,7 @@
 
 
 
-{include file="../templates/footer.tpl"}
+{include file="footer.tpl"}
 
 
 </body>
