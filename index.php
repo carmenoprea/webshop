@@ -44,7 +44,7 @@ $app->post('/login', function () use ($app)
             if (password_verify($_POST['password'], $password))
             {
                 $app['session']->set('isLoggedIn', true);
-                return $app->redirect('/');
+                return $app->redirect('/webshop');
             }
             else
                 $errors = ['password' => 'Wrong password.'];
@@ -71,7 +71,7 @@ $app->post('/login', function () use ($app)
 $app->get('/logout', function () use ($app)
 {
     $app['session']->remove('isLoggedIn');
-    return $app->redirect('/');
+    return $app->redirect('/webshop');
 });
 
 $app->get('/employees', function () use ($app)

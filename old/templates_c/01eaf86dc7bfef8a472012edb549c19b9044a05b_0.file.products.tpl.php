@@ -27,7 +27,7 @@ function content_5707bd1638e3a2_91425669 ($_smarty_tpl) {
             <table class="table table-bordered">
             <theader>
                 
-                <th>order </th><th>Detail</th><th>artikel nummer</th><th>product</th> <th>beschrijving</th><th>prijs</th><th>voorraad</th>      
+                <th>order </th><th>Detail</th><th>Artikel nummer</th><th>Product</th> <th>Beschrijving</th><th>Prijs</th><th>Voorraad</th>
                 
             </theader>
             <tbody>

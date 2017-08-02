@@ -21,10 +21,16 @@ $login = $smarty;
 if (!empty($_POST['username']) && $_SESSION['toegang']=='false' ) {
         // functie login();
 
+
         $toegang=false;
         include("../includes/dbConnect.php");
-        
+        include("dbConnect.php");
+
+        $table = 'users';
+
         $query = "SELECT password FROM $table WHERE " . "email ='" . $_POST["username"] . "';";
+        echo $query;
+
         $result = $dbh->prepare( $query );
         $result->execute();
         $r = $result->fetch(PDO::FETCH_ASSOC);

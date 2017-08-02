@@ -12,9 +12,9 @@ $app['smarty.templateDir'] = APP_DIR . '/views/';
 
 // Database configuration / Doctrine configuration
 $app['config.db.host']     = 'localhost';
-$app['config.db.user']     = 'web';
+$app['config.db.user']     = 'root';
 $app['config.db.dbname']   = 'webshop';
-$app['config.db.password'] = 'web123';
+$app['config.db.password'] = '';
 
 // Setup Classes
 // add Smarty to Silex

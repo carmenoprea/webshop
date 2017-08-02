@@ -12,7 +12,7 @@
                 {strip}
                    <td><a href="index.php?cart=yes&add&productID={$row.productID}">O</a></td>
                    <td><a href="index.php?productDetail&productID={$row.productID}">D</a></td>
-                   <td>{$row.productID}<img src="./products_pictures/{$row.thumbnail}" alt="{$row.name}" border=0></td>
+                   <td>{$row.productID}<img src="./products_pictures/{$row.thumbnail}" class="product-picture" alt="{$row.name}" border=0></td>
                    <td>{$row.name}</td>
                    <td>{$row.description}</td>
                    <td>&euro; {$row.price}</td>

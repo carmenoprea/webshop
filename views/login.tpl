@@ -18,7 +18,7 @@
                     </ul>
                 {/if}
 
-                <form method="post" action="/login">
+                <form method="post" action="login">
                     <fieldset class="panel-heading">
                         <input type="text" name="username" required="yes" placeholder="Username">
                         <input type="password" name="password" required="yes" placeholder="Wachtwoord">

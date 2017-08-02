@@ -17,7 +17,7 @@
           <p><strong>Endless</strong> Amet</p>
         </div>
         <div class="panel-footer">
-          <h3>$19</h3>
+          <h3>&euro;15</h3>
           <h4>per month</h4>
           <button class="btn btn-lg">Sign Up</button>
         </div>
@@ -36,7 +36,7 @@
           <p><strong>Endless</strong> Amet</p>
         </div>
         <div class="panel-footer">
-          <h3>$29</h3>
+          <h3>&euro;25</h3>
           <h4>per month</h4>
           <button class="btn btn-lg">Sign Up</button>
         </div>
@@ -55,7 +55,7 @@
           <p><strong>Endless</strong> Amet</p>
         </div>
         <div class="panel-footer">
-          <h3>$49</h3>
+          <h3>&euro;45</h3>
           <h4>per month</h4>
           <button class="btn btn-lg">Sign Up</button>
         </div>

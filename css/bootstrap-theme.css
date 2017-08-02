@@ -228,7 +228,7 @@ fieldset[disabled] .btn-info.active {
   background-image: none;
 }
 .btn-warning {
-  background-image: -webkit-linear-gradient(top, #f0ad4e 0%, #eb9316 100%);
+  background-image: -webkit-linear-gradient(top, #f0ad4e 0%, rgba(235, 147, 22, 0.97) 100%);
   background-image:      -o-linear-gradient(top, #f0ad4e 0%, #eb9316 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f0ad4e), to(#eb9316));
   background-image:         linear-gradient(to bottom, #f0ad4e 0%, #eb9316 100%);

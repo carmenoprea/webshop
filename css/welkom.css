@@ -1,5 +1,5 @@
 *   {
-    background-color: antiquewhite;
+    background-color: black;
     font-family: sans-serif;
     font-size: 14px;
 
@@ -8,7 +8,7 @@
 input {
 
     display: block;
-    background-color: whitesmoke;
+    background-color:black;
     border-style: solid;
     border-radius: 2px;
 }

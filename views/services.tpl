@@ -5,17 +5,17 @@
   <div class="row">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-off"></span>
-      <h4>gebruikte hardware</h4>
+      <h4>Hardware</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-heart"></span>
-      <h4>reparaties</h4>
+      <h4>Repair</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-lock"></span>
-      <h4>installaties</h4>
+      <h4>Assembly</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
     </div>
@@ -23,17 +23,17 @@
   <div class="row">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-leaf"></span>
-      <h4>netwerken</h4>
+      <h4>Network</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-certificate"></span>
-      <h4>stage</h4>
+      <h4>Internship</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-wrench"></span>
-      <h4>projecten</h4>
+      <h4>Projects</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
   </div>

@@ -6,12 +6,11 @@
  * Time: 20:22
  */
 
-$user = "web";
-$password = "web123";
+$user = "root";
+$password = "";
 $host = "localhost";
-$database= "webshop";
-//$table = "users";
-//$query = "SELECT * from $table;";
+$dbname= "webshop";
+
 
 
 try {
